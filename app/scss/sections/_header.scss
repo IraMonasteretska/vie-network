@@ -4,7 +4,8 @@
     align-items: center;
     // position: absolute;
     padding: 30px 15px;
-    @media (max-width: 768px){
+
+    @media (max-width: 768px) {
         padding: 10px 15px;
     }
 
@@ -15,11 +16,11 @@
         position: absolute;
         height: 100%;
         width: 200%;
-        right: 100%; 
+        right: 100%;
     }
 
     &__logo {
-        @media (max-width: 640px){
+        @media (max-width: 640px) {
             width: 50%;
         }
     }
@@ -29,13 +30,16 @@
         position: absolute;
         left: 0;
         right: 0;
-        z-index: 9;
-        @media (max-width: 767px){
+        z-index: 11;
+
+        @media (max-width: 767px) {
             position: static;
         }
+
         .col-xl-7 {
             padding: 0;
-            @media (max-width: 1400px){
+
+            @media (max-width: 1400px) {
                 flex: 0 0 100%;
                 max-width: 100%;
             }
@@ -43,7 +47,7 @@
     }
 
     &__menu {
-        
+
         ul {
             display: flex;
             list-style: none;
@@ -52,6 +56,7 @@
 
             li {
                 padding: 0 22px;
+
                 a {
                     text-transform: uppercase;
                     color: black;
@@ -59,6 +64,7 @@
                     text-decoration: none;
                     font-family: ar;
                     padding-bottom: 4px;
+
                     &::after {
                         content: "";
                         position: absolute;
@@ -69,17 +75,19 @@
                         right: -20px;
                         background: #000000;
                         transition: width .2s ease;
-                        
+
                     }
-                    
+
                     &:hover {
                         text-decoration: none;
+
                         &::after {
                             width: 45px;
                             background: #000000;
                         }
                     }
                 }
+
                 &.current-menu-item {
                     a {
                         &::after {
@@ -96,7 +104,7 @@
 
 
 
-.hamburger{
+.hamburger {
     width: 25px;
     height: 18px;
     z-index: 99999;
@@ -107,10 +115,12 @@
     position: absolute;
     right: 15px;
     top: 15px;
-    display: none ;
-    @media (max-width: 768px){
+    display: none;
+
+    @media (max-width: 768px) {
         display: block;
     }
+
     &__icon {
         width: 27px;
         height: 2px;
@@ -138,7 +148,7 @@
             left: 0;
             border-radius: 15px;
         }
-           
+
 
         &::after {
             content: '';
@@ -154,8 +164,8 @@
             right: 0;
             border-radius: 15px;
         }
-            
-        
+
+
         &.active {
             background: transparent;
 
@@ -168,7 +178,7 @@
                 top: 0;
                 background: $vn_blue;
             }
-                
+
 
             &::after {
                 width: 27px;
@@ -180,42 +190,46 @@
                 top: 0;
                 background: $vn_blue;
             }
-                
+
         }
-            
+
     }
-       
+
 }
+
 @media (max-width: 1600px) {
     .header__menu {
         width: 100%;
+
         ul {
             li {
                 padding: 0 15px;
             }
         }
-    } 
+    }
 }
 
 
 @media (max-width: 991px) {
     .header__menu {
         width: 100%;
+
         ul {
             li {
                 padding: 0 15px;
+
                 a {
-                    font-size: 14px ;
+                    font-size: 14px;
                 }
             }
         }
-    } 
+    }
 }
 
 @media (max-width: 768px) {
     .header {
         &__menu {
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 position: fixed;
                 top: 53px;
                 left: 0;
@@ -229,16 +243,19 @@
                 transition: 0.7s;
                 opacity: 0;
                 visibility: hidden;
-                &--open{
+
+                &--open {
                     opacity: 1;
                     visibility: visible;
                     transform: translateX(0);
                 }
+
                 ul {
                     flex-direction: column;
                     align-items: center;
                     padding-top: 30px;
                     padding-left: 0;
+
                     li {
                         padding: 22px 0;
                     }
