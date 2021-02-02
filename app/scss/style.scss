@@ -32,6 +32,8 @@ a {
 body {
     background-color: #ffffff;
     transition: background-color 0.8s ease;
+    font-family: 'rr';
+
     &.color-grey{
         .about__img_mask {
             background-image: url(../img/img_mask_g.png);
@@ -137,7 +139,7 @@ body {
     text-transform: uppercase;
     color: $vn_blue;
     font-size: 16px;
-    font-family: ab;
+    font-family: rb;
     text-decoration: none;
     text-transform: uppercase;
     &-text {

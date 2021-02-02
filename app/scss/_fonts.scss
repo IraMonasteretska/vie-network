@@ -1,6 +1,14 @@
 @font-face {
-    font-family: "ar";
-    src: url("../fonts/Archivo/Archivo-Regular.ttf") format("truetype")     
+    font-family: "rr";
+    src: url("../fonts/Rubik/Rubik-Regular.ttf") format("truetype")     
+}
+@font-face {
+    font-family: "rb";
+    src: url("../fonts/Rubik/Rubik-Bold.ttf") format("truetype")    
+}
+@font-face {
+    font-family: "ri";
+    src: url("../fonts/Rubik/Rubik-Italic.ttf") format("truetype")    
 }
 @font-face {
     font-family: "am";
@@ -9,8 +17,4 @@
 @font-face {
     font-family: "ab";
     src: url("../fonts/Archivo/Archivo-Bold.ttf") format("truetype")    
-}
-@font-face {
-    font-family: "ai";
-    src: url("../fonts/Archivo/Archivo-Italic.ttf") format("truetype")    
 }
