@@ -71,14 +71,18 @@
                     }
                     span{
                         font-size: 28px;
+                        line-height: 28px;
                         font-family: ab;
                         -webkit-text-stroke: 0.5px $vn_black;
                         letter-spacing: 1px;
                         @media (max-width: 1200px){
                             font-size: 22px;
+                            line-height: 22px;
+
                         }
                         @media (max-width: 640px){
                             font-size: 18px;
+                            line-height: 18px;
                         }
                     }
                 }

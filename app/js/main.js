@@ -1,6 +1,7 @@
 
 
 $(document).ready(function () {
+    ///////////// slider intro  ////////
 
     var swiper = new Swiper('.intro__slider', {
         direction: 'vertical',
@@ -40,6 +41,7 @@ $(document).ready(function () {
 
     ///////////////////////////////////////
 
+    ///////////// slider services  ////////
 
     var galleryTop = new Swiper('.gallery-img', {
         spaceBetween: 10,
@@ -88,9 +90,9 @@ $(document).ready(function () {
     galleryTop.controller.control = galleryThumbs;
     galleryThumbs.controller.control = galleryTop;
 
+    /////////////////////////////////////////////////
 
-
-    ///////////////////////////////////////
+    //////////////// openMenu ///////////////////////
 
 
     function openMenu() {
@@ -110,9 +112,12 @@ $(document).ready(function () {
 
     }
     openMenu()
-
+ //////////////////////////////////////
 
 });
+
+
+//////////////// scroll  bg  /////////////////////// 
 
 $(window).scroll(function () {
 
@@ -136,14 +141,15 @@ $(window).scroll(function () {
 
 }).scroll();
 
+//////////////////////////////////////////////
 
+////////////////  about img mask  ////////////
 
 window.onload = function () {
-    console.log('kkk');
     let over = document.querySelector(".about__img");
     const boxer = boxercontainer.querySelector(".about__img_mask"),
 
-        fluidboxer = window.matchMedia("(min-width: 1024px)");
+    fluidboxer = window.matchMedia("(min-width: 991px)");
 
     function getMousePos(xRef, yRef) {
 
@@ -155,15 +161,10 @@ window.onload = function () {
     }
 
     over.addEventListener("mousemove", function (e) {
-
         let mousePos = getMousePos(e.clientX, e.clientY),
             psx = mousePos.x - over.offsetWidth / 2,
             psy = mousePos.y - over.offsetHeight / 2
-
-
-
         if (Math.abs(psx) < 400 && psy < 400 && psy > -400 && psx > -400 && fluidboxer.matches) {
-
             boxer.style.transform = "translate(" + psx + "px, " + psy + "px)";
         }
     })
@@ -172,5 +173,5 @@ window.onload = function () {
         boxer.style.transform = "translate(0px, 0px)";
     })
 };
-
+////////////////////////////////////////////////
 
