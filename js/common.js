@@ -97,36 +97,143 @@ $(document).ready(function () {
     });
 
     // Body BG
+    if ($(window).width() > 1024) {
+        $(window).scroll(function () {
 
-    $(window).scroll(function () {
+            // selectors
+            var $window = $(window),
+                $body = $('body'),
+                $panel = $('.panel');
 
-        // selectors
-        var $window = $(window),
-            $body = $('body'),
-            $panel = $('.panel');
+            // Change 33% earlier than scroll position so colour is there when you arrive.
+            var scroll = $window.scrollTop() + ($window.height() / 3);
 
-        // Change 33% earlier than scroll position so colour is there when you arrive.
-        var scroll = $window.scrollTop() + ($window.height() / 3);
+            $panel.each(function () {
+                var $this = $(this);
 
-        $panel.each(function () {
-            var $this = $(this);
+                // if position is within range of this panel.
+                // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+                // Remember we set the scroll to 33% earlier in scroll var.
+                if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
 
-            // if position is within range of this panel.
-            // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-            // Remember we set the scroll to 33% earlier in scroll var.
-            if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+                    // Remove all classes on body with color-
+                    $body.removeClass(function (index, css) {
+                        return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+                    });
 
-                // Remove all classes on body with color-
-                $body.removeClass(function (index, css) {
-                    return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
-                });
+                    // Add class of currently active div
+                    $body.addClass('color-' + $(this).data('color'));
+                }
+            });
 
-                // Add class of currently active div
-                $body.addClass('color-' + $(this).data('color'));
-            }
+        }).scroll();
+    }
+    // mask
+
+    $('.numonly').inputmask({ "mask": "9", "repeat": 16 });
+    $('.phoneinp').inputmask({
+        "mask": "99 /999/ 9999999",
+        showMaskOnHover: false,
+        showMaskOnFocus: false,
+    });
+
+    // About Us - slider
+    if ($(".abslider__wrapp").length) {
+        var swiper = new Swiper('.aboutus-slider', {
+            direction: 'vertical',
+            loop: false,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            speed: 1000,
+            breakpoints: {
+                700: {
+                    slidesPerView: 1,
+                }
+            },
         });
 
-    }).scroll();
+        var swiper = new Swiper('.alotexp-slider', {
+            direction: 'vertical',
+            loop: false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            slidesPerView: 1,
+            paginationClickable: true,
+            spaceBetween: 0,
+            speed: 1000,
+            breakpoints: {
+                700: {
+                    slidesPerView: 1,
+                }
+            },
+        });
+    }
+
+
+
+
+
+
+
+
+    // GALLERY
+
+    // Init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        masonry: {
+            // use outer width of grid-sizer for columnWidth
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer'
+        }
+    });
+
+
+    // filter items on button click
+    $('.filter-button-group').on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+    });
+
+    $('.filter-button-group button').click(function () {
+        $('.filter-button-group button').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Custom click event - open fancyBox manually
+    $('.fancybox').on('click', function () {
+        var visibleLinks = $('.fancybox:visible');
+
+        $.fancybox.open(visibleLinks, {}, visibleLinks.index(this));
+
+        return false;
+    });
+
+
+
+
+
+
+
+
+
 
 
 
