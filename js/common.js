@@ -129,13 +129,14 @@ $(document).ready(function () {
         }).scroll();
     }
     // mask
-
-    $('.numonly').inputmask({ "mask": "9", "repeat": 16 });
-    $('.phoneinp').inputmask({
-        "mask": "99 /999/ 9999999",
-        showMaskOnHover: false,
-        showMaskOnFocus: false,
-    });
+    if ($(".contacts_general").length) {
+        $('.numonly').inputmask({ "mask": "9", "repeat": 16 });
+        $('.phoneinp').inputmask({
+            "mask": "99 /999/ 9999999",
+            showMaskOnHover: false,
+            showMaskOnFocus: false,
+        });
+    }
 
     // About Us - slider
     if ($(".abslider__wrapp").length) {
@@ -195,16 +196,17 @@ $(document).ready(function () {
     // GALLERY
 
     // Init Isotope
-    var $grid = $('.grid').isotope({
-        itemSelector: '.grid-item',
-        percentPosition: true,
-        masonry: {
-            // use outer width of grid-sizer for columnWidth
-            columnWidth: '.grid-sizer',
-            gutter: '.gutter-sizer'
-        }
-    });
-
+    if ($(".grid").length) {
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            masonry: {
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: '.grid-sizer',
+                gutter: '.gutter-sizer'
+            }
+        });
+    }
 
     // filter items on button click
     $('.filter-button-group').on('click', 'button', function () {
@@ -227,10 +229,14 @@ $(document).ready(function () {
     });
 
 
+    // AOS
 
-
-
-
+    AOS.init({
+        disable: function () {
+            var maxWidth = 1025;
+            return window.innerWidth < maxWidth;
+        }
+    });
 
 
 

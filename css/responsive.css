@@ -837,6 +837,14 @@
         height: 45px;
     }
 
+    /* Gall v2 */
+    .gellery-wrapper.v2 .grid-item .gallbox a {
+        height: 250px;
+    }
+
+    .about-slider__description p:last-child {
+        margin-bottom: 30px;
+    }
 
 }
 

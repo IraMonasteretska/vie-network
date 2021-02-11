@@ -7,6 +7,7 @@ body {
     color: #1C1E23;
     font-family: 'Rubik', sans-serif;
     transition: background-color 0.5s ease;
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -263,12 +264,13 @@ header.header {
     top: 50%;
     margin: 0;
     max-width: 610px;
-    transform: translateY(-50%);
+    /* transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    -o-transform: translateY(-50%); */
     letter-spacing: 5px;
+    margin-top: -80px;
 }
 
 .mainslider-section h1:after {
@@ -334,6 +336,22 @@ header.header {
 
 .mainslider__contlinks ul a:hover {
     opacity: .5;
+}
+
+.mainslider__contlinks ul a img {
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.mainslider__contlinks ul a:hover img {
+    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
 }
 
 /* main slider END */
@@ -1782,12 +1800,14 @@ footer.footer p {
 }
 
 
+/* Gall v2 */
+.gellery-wrapper.v2 .grid-item .gallbox a {
+    height: 300px;
+}
 
-
-
-
-
-
+.mainslider-section h1 span {
+    display: inline-block;
+}
 
 /* 
 font-family: 'Kanit', sans-serif;

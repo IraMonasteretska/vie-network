@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Consulting</title>
+    <title>Gallery v2</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-    <header class="header">
+    <header class="header header_fullwidth">
         <div class="header__content">
             <div class="header__logo">
                 <a href="index.html"><img src="img/logo.png" alt="logo"></a>
@@ -24,316 +23,338 @@
                     <a class="moblogo" href="index.html"><img src="img/logo.png" alt="logo"></a>
                     <span class="closemenu-btn"><img src="img/close.svg" alt="close"></span>
                     <ul>
-                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT US</a></li>
                         <li><a href="#">SERVICES</a></li>
+                        <li class="active"><a href="#">Gallery</a></li>
                         <li><a href="#">CONTACT US</a></li>
                     </ul>
                 </div>
             </div>
             <div class="hamburger">
-                <div class="hamburger__icon"></div>				
+                <div class="hamburger__icon"></div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="mainslider-section">
-            <h1 class="white" data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">IT<br> CONsulting</h1>
-            <div class="mainswiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="mainslider__picwrap">
-                            <img src="img/consulting-slide1.jpg" alt="slide">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="mainslider__picwrap">
-                            <img src="img/consulting-slide2.jpg" alt="slide">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="mainslider__picwrap">
-                            <img src="img/consulting-slide3.jpg" alt="slide">
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-            </div>
-            <div class="mainslider__contlinks">
-                <div class="phonebox">
-                    <a href="tel:91400070091">|914| 000 700 91</a>
-                </div>
-                <ul>
-                    <li><a href="#" target="_blank"><img src="img/icons/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#" target="_blank"><img src="img/icons/instagram.svg" alt="instagram"></a></li>
-                    <li><a href="#" target="_blank"><img src="img/icons/twitter.svg" alt="twitter"></a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="about-section">
+        <section class="gellery-section">
             <div class="container-fluid">
                 <div class="section-header">
                     <div class="row">
                         <div class="col-xl-2">
-                            <div class="sect-subtitle" data-aos="fade-left" data-aos-delay="40" data-aos-duration="1000">WHY WE</div>
+                            <div class="sect-subtitle" data-aos="fade-left" data-aos-delay="40"
+                            data-aos-duration="1000">OUR PROJECTS</div>
                         </div>
                         <div class="col-xl-10">
-                            <h2 class="section-title" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">ABOUT <span>VIE NETWORKS</span></h2>
+                            <h1 class="section-title" data-aos="fade-left" data-aos-delay="100"
+                            data-aos-duration="1500">GALLERY <span>VIE NETWORKS</span></h1>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="parallax-window">
-                            <img src="img/parallax-bg.png" alt="image">
-                            <div id="scene">
-                                <div class="parpic1" data-depth="0.5">
-                                    <img src="img/parallaxpic.jpg" alt="image">
-                                </div>
-                            </div>
-                        </div>
+                <div class="gellery-wrapper v2">
+                    <div class="button-group filter-button-group">
+                        <button data-filter="*" class="btn active">All</button>
+                        <button data-filter=".lighting" class="btn">Lighting</button>
+                        <button data-filter=".shades" class="btn">Shades</button>
+                        <button data-filter=".audio" class="btn">Audio</button>
+                        <button data-filter=".video" class="btn">Video</button>
+                        <button data-filter=".smarthome" class="btn">Smart home automation</button>
+                        <button data-filter=".surveillance" class="btn">Surveillance</button>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-section__descrbox">
-                            <div class="topsect" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
-                                <p>
-                                    <b>
-                                        Vie Networks offers a customer service approach focused on relationship
-                                        management
-                                        and customer loyalty, keeping the vision of the business and home owner in mind.
-                                        We
-                                        provide a diverse range of services from Project Management to proactive
-                                        infrastructure monitoring.
-                                    </b>
-                                </p>
-                            </div>
-                            <div class="bottsect" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
-                                <p>
-                                    <i>
-                                        Whether you are growing an established business or starting a new one, we offer
-                                        comprehensive services for your most demanding and innovative information
-                                        technology
-                                        and automation needs.
-                                    </i>
-                                </p>
-                                <a href="#" class="rotatelink">
-                                    <span>READ MORE</span>
-                                    <text>READ MORE</text>
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+                        <div class="item grid-item lighting">
+                            <div class="gallbox">
+                                <a href="img/biggallpic1.jpg" data-fancybox>
+                                    <img src="img/gallpic1.jpg" />
                                 </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Lighting</p>
+                                    <p class="title">Project 1: Greenwich, CT</p>
+                                </div>
                             </div>
                         </div>
+                        <div class="item grid-item video">
+                            <div class="gallbox">
+                                <a href="img/biggallpic3.jpg" data-fancybox>
+                                    <img src="img/gallpic3.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Video</p>
+                                    <p class="title">Project 2:  Hotel NYC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item shades">
+                            <div class="gallbox">
+                                <a href="img/biggallpic5.jpg" data-fancybox>
+                                    <img src="img/gallpic5.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Shades</p>
+                                    <p class="title">Project 3:  Purchase, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item audio">
+                            <div class="gallbox">
+                                <a href="img/biggallpic7.jpg" data-fancybox>
+                                    <img src="img/gallpic7.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Audio</p>
+                                    <p class="title">Project 4:  Scarsdale, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item lighting">
+                            <div class="gallbox">
+                                <a href="img/biggallpic2.jpg" data-fancybox>
+                                    <img src="img/gallpic2.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Lighting</p>
+                                    <p class="title">Project 5:  Southampton, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item audio">
+                            <div class="gallbox">
+                                <a href="img/biggallpic4.jpg" data-fancybox>
+                                    <img src="img/gallpic4.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Audio</p>
+                                    <p class="title">Project 6:  Harrison, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item lighting">
+                            <div class="gallbox">
+                                <a href="img/biggallpic6.jpg" data-fancybox>
+                                    <img src="img/gallpic6.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Lighting</p>
+                                    <p class="title">Project 6:  Harrison, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item video">
+                            <div class="gallbox">
+                                <a href="img/biggallpic8.jpg" data-fancybox>
+                                    <img src="img/gallpic8.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Video</p>
+                                    <p class="title">Project 7:  Manalopan, FL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item lighting">
+                            <div class="gallbox">
+                                <a href="img/biggallpic1.jpg" data-fancybox>
+                                    <img src="img/gallpic1.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Lighting</p>
+                                    <p class="title">Project 1: Greenwich, CT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item video">
+                            <div class="gallbox">
+                                <a href="img/biggallpic3.jpg" data-fancybox>
+                                    <img src="img/gallpic3.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Video</p>
+                                    <p class="title">Project 2:  Hotel NYC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item shades">
+                            <div class="gallbox">
+                                <a href="img/biggallpic5.jpg" data-fancybox>
+                                    <img src="img/gallpic5.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Shades</p>
+                                    <p class="title">Project 3:  Purchase, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item audio">
+                            <div class="gallbox">
+                                <a href="img/biggallpic7.jpg" data-fancybox>
+                                    <img src="img/gallpic7.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Audio</p>
+                                    <p class="title">Project 4:  Scarsdale, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item lighting">
+                            <div class="gallbox">
+                                <a href="img/biggallpic2.jpg" data-fancybox>
+                                    <img src="img/gallpic2.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Lighting</p>
+                                    <p class="title">Project 5:  Southampton, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item audio">
+                            <div class="gallbox">
+                                <a href="img/biggallpic4.jpg" data-fancybox>
+                                    <img src="img/gallpic4.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Audio</p>
+                                    <p class="title">Project 6:  Harrison, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item lighting">
+                            <div class="gallbox">
+                                <a href="img/biggallpic6.jpg" data-fancybox>
+                                    <img src="img/gallpic6.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Lighting</p>
+                                    <p class="title">Project 6:  Harrison, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item video">
+                            <div class="gallbox">
+                                <a href="img/biggallpic8.jpg" data-fancybox>
+                                    <img src="img/gallpic8.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Video</p>
+                                    <p class="title">Project 7:  Manalopan, FL</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item lighting">
+                            <div class="gallbox">
+                                <a href="img/biggallpic1.jpg" data-fancybox>
+                                    <img src="img/gallpic1.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Lighting</p>
+                                    <p class="title">Project 1: Greenwich, CT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item video">
+                            <div class="gallbox">
+                                <a href="img/biggallpic3.jpg" data-fancybox>
+                                    <img src="img/gallpic3.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Video</p>
+                                    <p class="title">Project 2:  Hotel NYC</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item shades">
+                            <div class="gallbox">
+                                <a href="img/biggallpic5.jpg" data-fancybox>
+                                    <img src="img/gallpic5.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Shades</p>
+                                    <p class="title">Project 3:  Purchase, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item audio">
+                            <div class="gallbox">
+                                <a href="img/biggallpic7.jpg" data-fancybox>
+                                    <img src="img/gallpic7.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Audio</p>
+                                    <p class="title">Project 4:  Scarsdale, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item smarthome">
+                            <div class="gallbox">
+                                <a href="img/biggallpic2.jpg" data-fancybox>
+                                    <img src="img/gallpic2.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Smart home automation</p>
+                                    <p class="title">Project 5:  Southampton, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item surveillance">
+                            <div class="gallbox">
+                                <a href="img/biggallpic6.jpg" data-fancybox>
+                                    <img src="img/gallpic6.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Surveillance</p>
+                                    <p class="title">Project 6:  Harrison, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item smarthome">
+                            <div class="gallbox">
+                                <a href="img/biggallpic2.jpg" data-fancybox>
+                                    <img src="img/gallpic2.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Smart home automation</p>
+                                    <p class="title">Project 5:  Southampton, NY</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item grid-item surveillance">
+                            <div class="gallbox">
+                                <a href="img/biggallpic6.jpg" data-fancybox>
+                                    <img src="img/gallpic6.jpg" />
+                                </a>
+                                <div class="gallbox__descr">
+                                    <p class="category">Surveillance</p>
+                                    <p class="title">Project 6:  Harrison, NY</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pagination">
+                        <ul>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">142</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="exploreserv-section">
+        <div class="contacts_general">
             <div class="container-fluid">
                 <div class="section-header">
                     <div class="row">
                         <div class="col-xl-2">
-                            <div class="sect-subtitle" data-aos="fade-left" data-aos-delay="40" data-aos-duration="1000">WHAT WE DO</div>
+                            <div class="sect-subtitle" data-aos="fade-left" data-aos-delay="40"
+                            data-aos-duration="1000">OUR CONTACTS</div>
                         </div>
                         <div class="col-xl-10">
-                            <h2 class="section-title" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">EXPLORE OUR SERVICES</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="exploreserv__sliders">
-                <div class="row no-gutters">
-                    <div class="exploreserv__left col-lg-4 col-5">
-                        <div class="exploreserv-picwrapper">
-                            <div class="exploreserv-pic">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="mainslider__picwrap">
-                                            <img src="img/cons-explore-slide1.jpg" alt="slide">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mainslider__picwrap">
-                                            <img src="img/cons-explore-slide2.jpg" alt="slide">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mainslider__picwrap">
-                                            <img src="img/cons-explore-slide3.jpg" alt="slide">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mainslider__picwrap">
-                                            <img src="img/cons-explore-slide4.jpg" alt="slide">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mainslider__picwrap">
-                                            <img src="img/cons-explore-slide5.jpg" alt="slide">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mainslider__picwrap">
-                                            <img src="img/cons-explore-slide6.jpg" alt="slide">
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="mainslider__picwrap">
-                                            <img src="img/cons-explore-slide7.jpg" alt="slide">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="exploreserv__rightsect col-lg-8 col-7">
-                        <div class="exploreserv-boxwrapper">
-                            <div class="exploreserv-box">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="exploreserv__slidebox">
-                                            <div class="fixheight-box">
-                                                <div class="exploreserv__head">
-                                                    <img src="img/icons/cons-expservic1.svg" alt="image">
-                                                    <p>Server Support</p>
-                                                </div>
-                                                <div class="exploreserv__body">
-                                                    <p>
-                                                        Vie offers Server Support services designed to keep your network performing at an optimal level.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="rotatelink">
-                                                <span>READ MORE</span>
-                                                <text>READ MORE</text>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="exploreserv__slidebox">
-                                            <div class="fixheight-box">
-                                                <div class="exploreserv__head">
-                                                    <img src="img/icons/cons-expservic2.svg" alt="image">
-                                                    <p>Help Desk Support</p>
-                                                </div>
-                                                <div class="exploreserv__body">
-                                                    <p>All you have to do is focus on the work in front of you.</p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="rotatelink">
-                                                <span>READ MORE</span>
-                                                <text>READ MORE</text>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="exploreserv__slidebox">
-                                            <div class="fixheight-box">
-                                                <div class="exploreserv__head">
-                                                    <img src="img/icons/cons-expservic3.svg" alt="image">
-                                                    <p>Web Design and Development</p>
-                                                </div>
-                                                <div class="exploreserv__body">
-                                                    <p>Lorem Ipsum</p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="rotatelink">
-                                                <span>READ MORE</span>
-                                                <text>READ MORE</text>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="exploreserv__slidebox">
-                                            <div class="fixheight-box">
-                                                <div class="exploreserv__head">
-                                                    <img src="img/icons/cons-expservic4.svg" alt="image">
-                                                    <p>Network Infrastructure and Security</p>
-                                                </div>
-                                                <div class="exploreserv__body">
-                                                    <p>Lorem ipsum</p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="rotatelink">
-                                                <span>READ MORE</span>
-                                                <text>READ MORE</text>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="exploreserv__slidebox">
-                                            <div class="fixheight-box">
-                                                <div class="exploreserv__head">
-                                                    <img src="img/icons/cons-expservic5.svg" alt="image">
-                                                    <p>Cloud Services</p>
-                                                </div>
-                                                <div class="exploreserv__body">
-                                                    <p>Lorem Ipsum.</p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="rotatelink">
-                                                <span>READ MORE</span>
-                                                <text>READ MORE</text>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="exploreserv__slidebox">
-                                            <div class="fixheight-box">
-                                                <div class="exploreserv__head">
-                                                    <img src="img/icons/cons-expservic6.svg" alt="image">
-                                                    <p>Microsoft and Apple Product Support</p>
-                                                </div>
-                                                <div class="exploreserv__body">
-                                                    <p>Lorem Ipsum.</p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="rotatelink">
-                                                <span>READ MORE</span>
-                                                <text>READ MORE</text>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="exploreserv__slidebox">
-                                            <div class="fixheight-box">
-                                                <div class="exploreserv__head">
-                                                    <img src="img/icons/cons-expservic7.svg" alt="image">
-                                                    <p>Backup and Disaster Recovery</p>
-                                                </div>
-                                                <div class="exploreserv__body">
-                                                    <p>Lorem Ipsum.</p>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="rotatelink">
-                                                <span>READ MORE</span>
-                                                <text>READ MORE</text>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <div class="contacts_general white">
-            <div class="container-fluid">
-                <div class="section-header">
-                    <div class="row">
-                        <div class="col-xl-2">
-                            <div class="sect-subtitle" data-aos="fade-left" data-aos-delay="40" data-aos-duration="1000">OUR CONTACTS</div>
-                        </div>
-                        <div class="col-xl-10">
-                            <h2 class="section-title" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1500">CONTACT US</h2>
+                            <h2 class="section-title" data-aos="fade-left" data-aos-delay="100"
+                            data-aos-duration="1500">CONTACT US</h2>
                         </div>
                     </div>
                 </div>
@@ -667,9 +688,9 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/swiper.js"></script>
     <script src="js/jquery.inputmask.js"></script>
-    <script src="js/parallax.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/aos.js"></script>
     <script src="js/common.js"></script>
 </body>
